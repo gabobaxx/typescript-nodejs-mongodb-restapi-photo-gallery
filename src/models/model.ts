@@ -1,11 +1,15 @@
 import mongoose, { Schema, model } from 'mongoose';
 
-export interface Scheme extends mongoose.Document {
+export interface IPhoto extends mongoose.Document {
     title: string;
+    description: string;
+    imagePath: string;
 };
 
-const scheme = new Schema({
-    title: String
+const modelSchema = new Schema({
+    title: String,
+    description: String,
+    imagePath: String
 });
 
-export default scheme<Scheme>('Scheme', schema);
+export default model<IPhoto>('Photo', modelSchema);

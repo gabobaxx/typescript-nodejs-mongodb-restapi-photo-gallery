@@ -1,30 +1,56 @@
 {
-  "name": "typescript-node-mongo-crud",
+  "name": "typescript-nodejs-mongodb-restapi-photo-gallery",
   "version": "1.0.0",
   "description": "This is a template for ts, node and mongodb crud",
   "main": "index.js",
   "scripts": {
     "start": "node build/src/",
-    "clean": "rm -rf build",
+    "clean": "rimraf build",
     "build": "npm run clean && tsc && npm run html",
     "html": "cp -r ./src/views/ ./src/public/ ./build/src/",
     "ts:node": "ts-node src/index.ts",
     "dev": "nodemon"
   },
-  "keywords": ["typescript", "nodejs", "mongodb"],
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "mongodb"
+  ],
   "author": "https://github.com/gabrielba15",
   "license": "ISC",
   "dependencies": {
     "@types/express-handlebars": "^3.1.0",
-    "@types/mongoose": "^5.10.3",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
-    "mongoose": "^5.11.15"
+    "fs-extra": "^9.1.0",
+    "mongoose": "^5.11.15",
+    "multer": "^1.4.2",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.10",
     "@types/express": "^4.17.11",
+    "@types/fs-extra": "^9.0.7",
+    "@types/handlebars": "^4.1.0",
+    "@types/mongoose": "^5.10.3",
+    "@types/multer": "^1.4.5",
+    "@types/node": "^14.14.31",
+    "@types/uuid": "^8.3.0",
     "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.5"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielba15/typescript-nodejs-mongodb-restapi-photo-gallery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrielba15/typescript-nodejs-mongodb-restapi-photo-gallery/issues"
+  },
+  "homepage": "https://github.com/gabrielba15/typescript-nodejs-mongodb-restapi-photo-gallery#readme"
 }
