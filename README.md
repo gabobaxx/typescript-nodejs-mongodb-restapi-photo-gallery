@@ -8,7 +8,7 @@ You can upload an image and then the title, description and an image path is sto
 - Save (title, description and an image path) in mongodb.
 - Delete an image by id.
 - Update image data (title, description).
-- Recovery all the images stored in the databases (server).
+- Recovery all the images stored in the database (server).
 
 ## Technologies used for this project :computer:
 
